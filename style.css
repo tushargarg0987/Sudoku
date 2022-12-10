@@ -1,0 +1,67 @@
+
+
+.container {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.game {
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    grid-template-rows: repeat(4, 0fr);
+}
+
+.game-cell {
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+}
+
+input:focus {
+    border: 1px solid black;
+}
+
+.game-cell:focus{
+    border: 1px solid black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.wrong {
+    background-color: red;
+}
+
+.allDone {
+    background-color: rgb(72, 224, 72);
+}
+
+.heading{
+    position: absolute;
+    color: rgb(8, 141, 8);
+    text-align: center;
+    font-size: 50px;
+    width: 100vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hide{
+    display: none;
+}
